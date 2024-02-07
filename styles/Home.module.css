@@ -1,0 +1,365 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  color:white;
+  flex-direction: column;
+  align-items: center;
+  overflow : auto;
+  height: 100vh; 
+  background: black; 
+}
+
+
+
+.container {
+  text-align: center;
+}
+
+
+.image {
+  margin: 10px; /* Add space between images */
+  cursor: pointer; /* Add pointer cursor to indicate clickable */
+  transition: transform 0.1s ease-in-out; /* Add a smooth transition on hover */
+  height : "200";
+  width : "200";
+}
+
+.imageconfirm{/* Add space between images */
+  cursor: pointer; /* Add pointer cursor to indicate clickable */
+  transition: transform 0.1s ease-in-out; /* Add a smooth transition on hover */
+  margin-left:40px;
+  max-width: 600px;
+  
+}
+
+.image:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+
+
+/* .selectedImage {
+  outline: 5px solid yellow;
+} 
+*/
+
+.image:hover,
+.image.selectedImage {
+  transform: scale(1.1);
+}
+
+.selectedImageContainer {/* Adjust the color as needed */
+  border-radius: 10px;
+  margin: 5px; /* Add margin to separate selected images */
+}
+
+.blueOutline {
+  border: 5px solid #3498db;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 20px; /* Add margin at the bottom to create space */
+  z-index: 2;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 600px;
+  left: 50%;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Add margin at the top to create space */
+  margin-bottom: 30px
+}
+
+.header {
+  background-color: #000; /* Dark background color */
+  color: #fff; /* Light text color */
+  padding: 10px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.parag{
+ color: #eaeaea;
+}
+
+.inputbox {
+  width: 600px;
+  padding: 10px; 
+  font-size: 16px;
+  border: 5px solid #a000f6; 
+  border-Radius: 5px;
+}
+
+.backgroundAnimation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  animation: gradientAnimation 10s infinite alternate;
+}
+
+.sampleContainer {
+  flex-direction: column;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(45deg, #ff6b6b, #556ee6, #34e89e);
+  }
+  25% {
+    background: linear-gradient(45deg, #556ee6, #34e89e, #ff6b6b);
+  }
+  50% {
+    background: linear-gradient(45deg, #34e89e, #ff6b6b, #556ee6);
+  }
+  75% {
+    background: linear-gradient(45deg, #ff6b6b, #556ee6, #34e89e);
+  }
+  100% {
+    background: linear-gradient(45deg, #556ee6, #34e89e, #ff6b6b);
+  }
+}
+
+
+.userInfo {
+  text-align: center; /* Center the content horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.userContainer {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: flex;
+}
+
+.twitterIcon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right:10px;
+}
+
+/* styles/Home.module.css */
+
+.twitterButton {
+  background-color: #1da1f2; /* Twitter blue color */
+  color: #ffffff; /* White text color */
+  padding: 15px 30px; /* Adjust the padding values to increase the size */
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px; /* Adjust the border-radius for rounded corners */
+  cursor: pointer;
+  font-size: 18px; /* Adjust the font size to increase text size */
+  margin-top: 20px;
+}
+
+
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+.gradientBackground {
+  height: 100vh; /* Make sure the gradient covers the entire viewport height */
+  background: linear-gradient(45deg, #ffb6c1, #ffdab9); /* Light blue to greenish blue */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeButton {
+  background: linear-gradient(45deg, #87CEEB, #6495ED, #4169E1, #800080);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.gobackandforth {
+  background: linear-gradient(45deg, #87CEEB, #6495ED, #4169E1, #800080);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.homeButton:hover {
+  background: linear-gradient(45deg, #4169E1, #800080);
+}
+.gradientText {
+  background: linear-gradient(45deg,#87CEEB, #6495ED, #4169E1, #800080);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+  z-index: 999; /* Ensure the logo is above other elements */
+}
+
+.userName {
+  text-align:center;
+  font-size:x-large;
+  font-weight: bold;
+  color: white; /* Adjust the color as needed */
+}
+
+.profilePicture{
+  width: 80px; /* Adjust the size as needed */
+  height: 80px; /* Adjust the size as needed */
+  border-radius: 50%;
+  border: 2px solid #fff; /* Add a white border */
+  object-fit: cover; /* Ensure the image covers the entire circle */
+}
+
+.signOutButton {
+  background-color: #ff3333;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  margin-right : 30px;
+}
+
+.title {
+  color:white;
+  margin: 0 0 1rem;
+  line-height: 1.15;
+  font-size: 3.6rem;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid #000;
+  animation: typing 3s steps(24);
+  position: relative;
+  animation: typing 5s infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  12.5% {
+    width: 20%;
+  }
+  25% {
+    width: 50%;
+  }
+  37.5% {
+    width: 80%;
+  }
+  50% {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.card {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+

@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "axios": "^1.6.3",
+    "buffer": "^6.0.3",
+    "dotenv": "^16.3.1",
+    "fetch": "^1.1.0",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "next": "latest",
+    "next-auth": "^4.24.5",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-tweet": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.4",
+    "@types/react": "18.2.43",
+    "typescript": "^5.3.3"
+  },
+  "name": "nextjs_twitter",
+  "description": "Tweeshirt",
+  "version": "1.0.0",
+  "main": "next.config.js",
+  "author": "",
+  "license": "ISC"
+}
