@@ -49,7 +49,7 @@ export default async function handler(req, res) {
         height: 768,
         width: 1088,
         steps: 50,
-        samples: 4,
+        samples: 2,
       }),
     });
 
@@ -73,15 +73,15 @@ export default async function handler(req, res) {
     const responseJSON = await response.json();
     const image_0 = responseJSON.artifacts[0].base64;
     const image_1 = responseJSON.artifacts[1].base64;
-    const image_2 = responseJSON.artifacts[2].base64;
-    const image_3 = responseJSON.artifacts[3].base64;
+    // const image_2 = responseJSON.artifacts[2].base64;
+    // const image_3 = responseJSON.artifacts[3].base64;
 
     // fs.writeFileSync(`public/gen_images/${prompt}_1_${timestamp}.png`, Buffer.from(image_0, 'base64'));
     // fs.writeFileSync(`public/gen_images/${prompt}_2_${timestamp}.png`, Buffer.from(image_1, 'base64'));
     // fs.writeFileSync(`public/gen_images/${prompt}_3_${timestamp}.png`, Buffer.from(image_2, 'base64'));
     // fs.writeFileSync(`public/gen_images/${prompt}_4_${timestamp}.png`, Buffer.from(image_3, 'base64'));
 
-    res.status(200).json({ success: true, image_0 , image_1, image_2, image_3,timestamp});
+    res.status(200).json({ success: true, image_0 , image_1,timestamp});
   } catch (error) {
     console.error(error);
     res.status(500).json({ success: false, error: error.message });
