@@ -81,7 +81,7 @@ export default async function handler(req, res) {
     // fs.writeFileSync(`public/gen_images/${prompt}_3_${timestamp}.png`, Buffer.from(image_2, 'base64'));
     // fs.writeFileSync(`public/gen_images/${prompt}_4_${timestamp}.png`, Buffer.from(image_3, 'base64'));
 
-    res.status(200).json({ success: true, image_0 , image_1,timestamp});
+    res.status(200).json({ success: true, image_0 ,timestamp});
   } catch (error) {
     console.error(error);
     res.status(500).json({ success: false, error: error.message });

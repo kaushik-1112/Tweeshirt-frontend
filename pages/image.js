@@ -12,7 +12,7 @@ export default function Home() {
 
   const [prompt, setPrompt] = useState('');
   const [image_0, setImage_0] = useState('');
-  const [image_1, setImage_1] = useState('');
+  // const [image_1, setImage_1] = useState('');
   // const [image_2, setImage_2] = useState('');
   // const [image_3, setImage_3] = useState('');
 
@@ -46,9 +46,9 @@ export default function Home() {
       case image_0:
         setSelectedImageIndex(1);
         break;
-      case image_1:
-        setSelectedImageIndex(2);
-        break;
+      // case image_1:
+      //   setSelectedImageIndex(2);
+      //   break;
       // case image_2:
       //   setSelectedImageIndex(3);
       //   break;
@@ -77,7 +77,7 @@ export default function Home() {
         timestamp, timestamp,
         selectedImageIndex: selectedImageIndex,
         image_0: image_0,
-        image_1: image_1,
+        // image_1: image_1,
         // image_2: image_2,
         // image_3: image_3
       },
@@ -97,7 +97,7 @@ export default function Home() {
       if (response.ok) {
         const {image_0,image_1,timestamp} = await response.json();
         setImage_0(image_0);
-        setImage_1(image_1);
+        // setImage_1(image_1);
         // setImage_2(image_2);
         // setImage_3(image_3);
         setTimestamp(timestamp);
@@ -158,7 +158,7 @@ export default function Home() {
           />
           </div>
         )}
-        {image_1 && (
+        {/* {image_1 && (
           <div
           className={`${styles.image} ${selectedImage === image_1}`}
           onClick={() => selectImage(image_1)}
@@ -173,7 +173,7 @@ export default function Home() {
             }}
           />
           </div>
-        )}
+        )} */}
         {/* {image_2 && (
           <div
           className={`${styles.image} ${selectedImage === image_2}`}
