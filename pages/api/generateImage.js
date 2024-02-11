@@ -1,10 +1,16 @@
 // pages/api/generateImage.js
 
 import fetch from 'node-fetch';
-import fs from 'fs';
+// import fs from 'fs';
 import dotenv from 'dotenv';
 
 dotenv.config();
+
+export const config = {
+  api: {
+    responseLimit: false,
+  },
+};
 
 export default async function handler(req, res) {
   try {
