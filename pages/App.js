@@ -82,7 +82,7 @@ const App = () => {
     }
 
     const url = 'https://api.printrove.com/api/external/designs';
-    const AUTH_KEY = process.env.AUTH_KEY
+    const AUTH_KEY = process.env.AUTH_KEY_PRINTROVE
 
     const headers = {
       Authorization: `Bearer ${AUTH_KEY}`,
