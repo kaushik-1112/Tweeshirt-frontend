@@ -49,7 +49,7 @@ export default async function handler(req, res) {
         height: 768,
         width: 1088,
         steps: 50,
-        samples: 2,
+        samples: 1,
       }),
     });
 
