@@ -3,8 +3,6 @@ import styles from '/styles/Home.module.css';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import axios from 'axios';
-import dotenv from 'dotenv';
-dotenv.config();
 
 import { useSession, signIn, signOut } from 'next-auth/react';
 
