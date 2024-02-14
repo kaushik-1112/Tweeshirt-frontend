@@ -72,7 +72,7 @@ export default async function handler(req, res) {
 
     const responseJSON = await response.json();
     const image_0 = responseJSON.artifacts[0].base64;
-    const image_1 = responseJSON.artifacts[1].base64;
+    // const image_1 = responseJSON.artifacts[1].base64;
     // const image_2 = responseJSON.artifacts[2].base64;
     // const image_3 = responseJSON.artifacts[3].base64;
 

@@ -95,7 +95,7 @@ export default function Home() {
       });
 
       if (response.ok) {
-        const {image_0,image_1,timestamp} = await response.json();
+        const {image_0,timestamp} = await response.json();
         setImage_0(image_0);
         // setImage_1(image_1);
         // setImage_2(image_2);
